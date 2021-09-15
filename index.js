@@ -11,5 +11,5 @@ app.get('/date', (req,res) =>{
 })
 
 app.listen(port, () => {
-    console.log('runing on localhost:${3000}')
+    console.log(`runing on localhost:${3000}`)
 });
