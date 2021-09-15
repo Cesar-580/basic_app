@@ -6,6 +6,10 @@ app.get('/', (req,res) => {
     res.send("Hello word");
 });
 
+app.get('/date', (req,res) =>{
+    res.send(`Date is ${(new Date()).toLocaleDateString("es-CO")}`)
+})
+
 app.listen(port, () => {
     console.log('runing on localhost:${3000}')
 });
